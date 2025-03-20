@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your story for publication on Prabhat Singh's website">
+    <meta name="keywords" content="story submission, publish story, author submission, creative writing">
+    <title>Submit Your Story | PRABHAT SINGH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to the submission form */
+        .submission-form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: var(--bg-secondary);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .submission-form {
+            display: grid;
+            gap: 25px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(var(--text-secondary-rgb), 0.2);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 200px;
+        }
+        
+        .form-group .help-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .guidelines {
+            margin-top: 60px;
+            padding: 30px;
+            background-color: rgba(var(--accent-rgb), 0.05);
+            border-radius: 12px;
+        }
+        
+        .guidelines h3 {
+            margin-top: 0;
+            color: var(--text-primary);
+        }
+        
+        .guidelines ul {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        [data-theme="dark"] .submission-form-container {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .submission-form-container {
+                padding: 25px;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+            
+            .form-actions button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">PRABHAT SINGH</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="developer.html">Developer</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Submission Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Submit Your Story</h1>
+                <p>Share your creative writing with our community of readers and writers</p>
+            </div>
+        </section>
+
+        <!-- Submission Form Section -->
+        <section class="submission-form-section">
+            <div class="container">
+                <div class="submission-form-container">
+                    <form class="submission-form" id="story-submission-form">
+                        <div class="form-group">
+                            <label for="author-name">Your Name *</label>
+                            <input type="text" id="author-name" name="author-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="author-email">Email Address *</label>
+                            <input type="email" id="author-email" name="author-email" required>
+                            <span class="help-text">We'll never share your email with anyone else.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-title">Story Title *</label>
+                            <input type="text" id="story-title" name="story-title" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-category">Category *</label>
+                            <select id="story-category" name="story-category" required>
+                                <option value="">Select a category</option>
+                                <option value="short-fiction">Short Fiction</option>
+                                <option value="flash-fiction">Flash Fiction</option>
+                                <option value="poetry">Poetry</option>
+                                <option value="creative-nonfiction">Creative Nonfiction</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-summary">Brief Summary *</label>
+                            <textarea id="story-summary" name="story-summary" rows="3" required></textarea>
+                            <span class="help-text">A short description (50-100 words) that will appear with your story.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-content">Story Content *</label>
+                            <textarea id="story-content" name="story-content" rows="10" required></textarea>
+                            <span class="help-text">Paste your story here. For formatting, you can use basic HTML tags.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="author-bio">Author Bio</label>
+                            <textarea id="author-bio" name="author-bio" rows="3"></textarea>
+                            <span class="help-text">A short bio (up to 100 words) that will appear with your story.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="terms" required>
+                                I confirm that this is my original work and I have the right to publish it. I agree to the <a href="#">submission guidelines</a>.
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn secondary-btn" onclick="window.history.back()">Cancel</button>
+                            <button type="submit" class="btn primary-btn">Submit Story</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="guidelines">
+                    <h3>Submission Guidelines</h3>
+                    <ul>
+                        <li><strong>Word Count:</strong> Short fiction (1,000-5,000 words), Flash fiction (under 1,000 words), Poetry (no more than 3 poems per submission).</li>
+                        <li><strong>Content:</strong> We welcome stories in all genres, but they should be appropriate for a general audience.</li>
+                        <li><strong>Format:</strong> Please submit your work in plain text. Basic HTML formatting is allowed.</li>
+                        <li><strong>Rights:</strong> By submitting, you retain all rights to your work. We request non-exclusive rights to publish it on our website.</li>
+                        <li><strong>Response Time:</strong> We aim to respond to all submissions within 2-4 weeks.</li>
+                        <li><strong>Multiple Submissions:</strong> Please submit only one story at a time and wait for a response before submitting another.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Join My Newsletter</h2>
+                        <p>Subscribe to receive updates about new stories, exclusive content, and special offers.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Prabhat Singh</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="developer.html">Developer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/prabhat--singh" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/Im_prabhat_004" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/prabhatsingh.x/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const storyForm = document.getElementById('story-submission-form');
+            
+            if (storyForm) {
+                storyForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real app, you would send the form data to your server
+                    // For now, we'll just show a success message
+                    
+                    // Simulate form submission
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                    
+                    setTimeout(() => {
+                        // Show success message
+                        showNotification('Your story has been submitted successfully! We will review it and get back to you soon.', 'success');
+                        
+                        // Reset form
+                        storyForm.reset();
+                        
+                        // Reset button
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                        
+                        // Scroll to top
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore stories and creative writing by Prabhat Singh and guest authors">
+    <meta name="keywords" content="stories, short fiction, flash fiction, creative writing, author stories">
+    <title>Stories | PRABHAT SINGH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">PRABHAT SINGH</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="stories.html" class="active">Stories</a></li>
+                    <li><a href="developer.html">Developer</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Stories Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Stories</h1>
+                <p>Explore short stories, flash fiction, and creative writing from Prabhat Singh and guest authors</p>
+            </div>
+        </section>
+
+        <!-- Stories Categories -->
+        <section class="stories-categories">
+            <div class="container">
+                <div class="categories-nav">
+                    <button class="category-btn active" data-category="all">All Stories</button>
+                    <button class="category-btn" data-category="short-fiction">Short Fiction</button>
+                    <button class="category-btn" data-category="flash-fiction">Flash Fiction</button>
+                    <button class="category-btn" data-category="poetry">Poetry</button>
+                    <button class="category-btn" data-category="guest-authors">Guest Authors</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Grid -->
+        <section class="stories-section">
+            <div class="container">
+                <div class="stories-grid">
+                    <!-- Story Card 1 -->
+                    <div class="story-card" data-category="short-fiction">
+                        <div class="story-header">
+                            <div class="story-author">
+                                <img src="images/author/author-professional.jpg" alt="Prabhat Singh">
+                                <div class="author-info">
+                                    <h4>Prabhat Singh</h4>
+                                    <span class="story-date">June 15, 2023</span>
+                                </div>
+                            </div>
+                            <div class="story-category">Short Fiction</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>The Last Train Home</h3>
+                            <p class="story-excerpt">The station was empty except for a lone figure sitting on the bench. As the last train approached, memories of a lifetime flashed before his eyes...</p>
+                            <a href="stories/last-train-home.html" class="read-more">Continue Reading</a>
+                        </div>
+                        <div class="story-footer">
+                            <div class="story-stats">
+                                <span class="likes"><i class="fas fa-heart"></i> 124</span>
+                                <span class="comments"><i class="fas fa-comment"></i> 32</span>
+                            </div>
+                            <div class="story-actions">
+                                <button class="like-btn" data-story-id="story1"><i class="far fa-heart"></i> Like</button>
+                                <button class="comment-btn" data-story-id="story1"><i class="far fa-comment"></i> Comment</button>
+                            </div>
+                        </div>
+                        <div class="story-comments hidden" id="comments-story1">
+                            <div class="comments-container">
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="images/users/user1.jpg" alt="Reader">
+                                        <span>Sarah Johnson</span>
+                                    </div>
+                                    <p>This story touched my heart. The imagery of the empty station was so vivid!</p>
+                                    <span class="comment-date">June 18, 2023</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="images/users/user2.jpg" alt="Reader">
+                                        <span>Michael Chen</span>
+                                    </div>
+                                    <p>I could relate to the protagonist's feelings. Beautifully written!</p>
+                                    <span class="comment-date">June 20, 2023</span>
+                                </div>
+                            </div>
+                            <form class="comment-form">
+                                <textarea placeholder="Add your comment..." required></textarea>
+                                <button type="submit" class="btn primary-btn">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Story Card 2 -->
+                    <div class="story-card" data-category="flash-fiction">
+                        <div class="story-header">
+                            <div class="story-author">
+                                <img src="images/author/author-professional.jpg" alt="Prabhat Singh">
+                                <div class="author-info">
+                                    <h4>Prabhat Singh</h4>
+                                    <span class="story-date">May 28, 2023</span>
+                                </div>
+                            </div>
+                            <div class="story-category">Flash Fiction</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>Whispers in the Wind</h3>
+                            <p class="story-excerpt">The old oak tree had witnessed generations of the village come and go. If only it could speak, the stories it would tell...</p>
+                            <a href="stories/whispers-wind.html" class="read-more">Continue Reading</a>
+                        </div>
+                        <div class="story-footer">
+                            <div class="story-stats">
+                                <span class="likes"><i class="fas fa-heart"></i> 98</span>
+                                <span class="comments"><i class="fas fa-comment"></i> 17</span>
+                            </div>
+                            <div class="story-actions">
+                                <button class="like-btn" data-story-id="story2"><i class="far fa-heart"></i> Like</button>
+                                <button class="comment-btn" data-story-id="story2"><i class="far fa-comment"></i> Comment</button>
+                            </div>
+                        </div>
+                        <div class="story-comments hidden" id="comments-story2">
+                            <div class="comments-container">
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="images/users/user3.jpg" alt="Reader">
+                                        <span>Emily Rodriguez</span>
+                                    </div>
+                                    <p>The personification of the oak tree was masterful. I felt like I was sitting beneath it myself.</p>
+                                    <span class="comment-date">May 30, 2023</span>
+                                </div>
+                            </div>
+                            <form class="comment-form">
+                                <textarea placeholder="Add your comment..." required></textarea>
+                                <button type="submit" class="btn primary-btn">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Story Card 3 -->
+                    <div class="story-card" data-category="poetry">
+                        <div class="story-header">
+                            <div class="story-author">
+                                <img src="images/author/author-professional.jpg" alt="Prabhat Singh">
+                                <div class="author-info">
+                                    <h4>Prabhat Singh</h4>
+                                    <span class="story-date">April 12, 2023</span>
+                                </div>
+                            </div>
+                            <div class="story-category">Poetry</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>Echoes of Silence</h3>
+                            <p class="story-excerpt">In the quiet moments between heartbeats, I hear the whispers of forgotten dreams. A collection of poems exploring the spaces between words...</p>
+                            <a href="stories/echoes-silence.html" class="read-more">Continue Reading</a>
+                        </div>
+                        <div class="story-footer">
+                            <div class="story-stats">
+                                <span class="likes"><i class="fas fa-heart"></i> 76</span>
+                                <span class="comments"><i class="fas fa-comment"></i> 9</span>
+                            </div>
+                            <div class="story-actions">
+                                <button class="like-btn" data-story-id="story3"><i class="far fa-heart"></i> Like</button>
+                                <button class="comment-btn" data-story-id="story3"><i class="far fa-comment"></i> Comment</button>
+                            </div>
+                        </div>
+                        <div class="story-comments hidden" id="comments-story3">
+                            <div class="comments-container">
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="images/users/user4.jpg" alt="Reader">
+                                        <span>David Wilson</span>
+                                    </div>
+                                    <p>Your poetry always speaks to my soul. The rhythm in these verses is hypnotic.</p>
+                                    <span class="comment-date">April 15, 2023</span>
+                                </div>
+                            </div>
+                            <form class="comment-form">
+                                <textarea placeholder="Add your comment..." required></textarea>
+                                <button type="submit" class="btn primary-btn">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Story Card 4 - Guest Author -->
+                    <div class="story-card" data-category="guest-authors">
+                        <div class="story-header">
+                            <div class="story-author">
+                                <img src="images/users/guest-author1.jpg" alt="Ananya Sharma">
+                                <div class="author-info">
+                                    <h4>Ananya Sharma</h4>
+                                    <span class="story-date">March 5, 2023</span>
+                                </div>
+                            </div>
+                            <div class="story-category">Guest Author</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>The Forgotten Garden</h3>
+                            <p class="story-excerpt">Behind the old mansion lay a garden that time had forgotten. Roses climbed over crumbling walls, and fountains whispered secrets of the past...</p>
+                            <a href="stories/forgotten-garden.html" class="read-more">Continue Reading</a>
+                        </div>
+                        <div class="story-footer">
+                            <div class="story-stats">
+                                <span class="likes"><i class="fas fa-heart"></i> 112</span>
+                                <span class="comments"><i class="fas fa-comment"></i> 24</span>
+                            </div>
+                            <div class="story-actions">
+                                <button class="like-btn" data-story-id="story4"><i class="far fa-heart"></i> Like</button>
+                                <button class="comment-btn" data-story-id="story4"><i class="far fa-comment"></i> Comment</button>
+                            </div>
+                        </div>
+                        <div class="story-comments hidden" id="comments-story4">
+                            <div class="comments-container">
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <img src="images/users/user5.jpg" alt="Reader">
+                                        <span>Jennifer Lee</span>
+                                    </div>
+                                    <p>Ananya's descriptive writing is incredible. I could smell the roses and hear the fountains!</p>
+                                    <span class="comment-date">March 8, 2023</span>
+                                </div>
+                            </div>
+                            <form class="comment-form">
+                                <textarea placeholder="Add your comment..." required></textarea>
+                                <button type="submit" class="btn primary-btn">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="center-button">
+                    <button id="load-more" class="btn secondary-btn">Load More Stories</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Submission Section -->
+        <section class="submission-section">
+            <div class="container">
+                <div class="submission-content">
+                    <h2>Share Your Story</h2>
+                    <p>Are you a writer looking to share your work? Submit your story for a chance to be featured on our website.</p>
+                    
+                    <div class="submission-features">
+                        <div class="submission-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Gain Visibility</h3>
+                            <p>Get your work in front of thousands of readers who love discovering new stories.</p>
+                        </div>
+                        
+                        <div class="submission-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Receive Feedback</h3>
+                            <p>Engage with readers through comments and see how your story resonates with the audience.</p>
+                        </div>
+                        
+                        <div class="submission-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Join a Community</h3>
+                            <p>Become part of a supportive community of writers and readers who share your passion.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="submit-story.html" class="btn primary-btn">Submit Your Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Join My Newsletter</h2>
+                        <p>Subscribe to receive updates about new stories, exclusive content, and special offers.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Prabhat Singh</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="developer.html">Developer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/prabhat--singh" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/Im_prabhat_004" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/prabhatsingh.x/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const storyCards = document.querySelectorAll('.story-card');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter stories
+                    storyCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Load more functionality (simulated)
+            const loadMoreBtn = document.getElementById('load-more');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // In a real app, you would fetch more stories from the server
+                    // For now, we'll just show a notification
+                    showNotification('More stories would be loaded here from the server.', 'info');
+                    
+                    // Disable the button after clicking to simulate end of content
+                    setTimeout(() => {
+                        this.disabled = true;
+                        this.textContent = 'No More Stories';
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
