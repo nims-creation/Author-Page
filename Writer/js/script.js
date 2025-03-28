@@ -1,6 +1,6 @@
 /**
  * Main JavaScript file for Author Website
- * Author: Your Name
+ * Author: Nitesh Mishra
  * Version: 1.0
  */
 
